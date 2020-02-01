@@ -1,0 +1,180 @@
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+header{
+	background-color: #333;
+	height: 3em;
+	color: #FFF;
+	margin-bottom: 1em;
+}
+
+header h1{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+header h2{
+	font-size: 1.5em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+
+header .container:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+.container{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+section{
+	clear: both;
+	overflow: hidden;
+}
+
+section h2 {
+	text-align: center;
+	font-size: 2em;
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 0;
+	margin-top: 2em;
+}
+
+section label {
+	margin-top: 1em;
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+label {
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+}
+
+.campo-medio {
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.grupo {
+	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+button {
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#0c8cd3;
+	border-color: #04324c;
+	width: 20%;
+    display: block;
+    clear: both;
+	margin: 10px 0px;
+	transition: all 50ms ease-in-out;
+	border-color: darkgray;
+}
+
+button:active {
+	border: 0 0;
+	transform: scale(1.02);
+	background-color: #183761;
+}
+
+.adicionar-paciente {
+    margin-top: 30px;
+}
+
+/* tratamento valores inválidos tabela */
+.campo-invalido {
+	border: 1px solid red;
+}
+
+.paciente-invalido {
+	background-color: lightcoral;
+}
+
+#mensagem-erro {
+	color: red;
+	font-size: large;
+	margin: 5px 0;
+}
+
+.fadeOut {
+	opacity: 0;
+	transition: 500ms;
+}
+
+#filtrar-tabela {
+	width: 20%;
+	height: 3em;
+	margin-bottom: 10px;
+}
+
+.invisivel {
+	display: none;
+}
+
+.buscar-url {
+	margin-top: 2em;
+	margin-left: 20%;
+	display: inline-block;
+}
+
+
+#btn-buscar-paciente {
+	vertical-align: top;
+	width: 30%;
+	margin: 0.5em 0 0.5em 0;
+	text-align: center;
+}
+
+#erro-ajax {
+	font-weight: bold;
+	color: red;
+}
