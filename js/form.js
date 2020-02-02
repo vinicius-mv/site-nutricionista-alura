@@ -10,7 +10,10 @@ botaoAdicionar.addEventListener("click", function (event) {
 
     let erros = validaPaciente(paciente);
 
+    let mensagemErro = document.querySelector("#mensagem-erro");
+
     if (erros.length > 0) {
+        mensagemErro.innerHTML = ""; //limpa mensagem de erro
         exibeMensagensDeErro(erros);
         return;
     }
@@ -19,7 +22,6 @@ botaoAdicionar.addEventListener("click", function (event) {
 
     form.reset();
 
-    let mensagemErro = document.querySelector("#mensagem-erro");
     mensagemErro.innerHTML = ""; //limpa mensagem de erro
 
 });
