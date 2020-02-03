@@ -18,8 +18,8 @@ campoFiltro.addEventListener("input", function (event) {
             }
         }
     } else {
-        pacientes.forEach(function(xicoDeSa){
-            xicoDeSa.classList.remove("invisivel"); 
+        pacientes.forEach(function(paciente){
+            paciente.classList.remove("invisivel"); 
         });
     }
 })

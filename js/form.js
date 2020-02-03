@@ -22,7 +22,7 @@ botaoAdicionar.addEventListener("click", function (event) {
 
     form.reset();
 
-    mensagemErro.innerHTML = ""; //limpa mensagem de erro
+    mensagemErro.innerHTML = "";
 
 });
 
@@ -45,6 +45,7 @@ function montaTr(paciente) {
 
 
     //cria as td (colunas) 
+    let removerTd = montaTd("⌦", "remover");
     let nomeTd = montaTd(paciente.nome, "info-nome");
     let pesoTd = montaTd(paciente.peso, "info-peso");
     let alturaTd = montaTd(paciente.altura, "info-altura");
@@ -53,6 +54,7 @@ function montaTr(paciente) {
 
 
     //ligaçao dos atributos td a tr correspondente
+    pacienteTr.appendChild(removerTd);
     pacienteTr.appendChild(nomeTd);
     pacienteTr.appendChild(pesoTd);
     pacienteTr.appendChild(alturaTd);
